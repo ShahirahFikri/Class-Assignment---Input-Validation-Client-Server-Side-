@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Details</title>
+</head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+input[type=text], textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+</style>
+<body>
+
+<h2>A. Student Details</h2>
+
+<div class="container">
+  <form action="process_form.php" method="post" id="myForm">
+  <div class="row">
+    <div class="col-25">
+      <label for="name">Name (Legal/Official):</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="name" name="name" required>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="matricnumber">Matric No:</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="matricnumber" name="matricnumber" required>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="address">Current Address:</label>
+    </div>
+    <div class="col-75">
+      <textarea id="address" name="address" style="height:200px" required></textarea>
+    </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="address">Home Address:</label>
+    </div>
+    <div class="col-75">
+      <textarea id="homeaddress" name="homeaddress" style="height:200px" required></textarea>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="email">Email (Gmail Account):</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="email" name="email" required>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="mobilephone">Mobile Phone No:</label>
+    </div>
+    <div class="col-75">
+      <input type="tel" id="mobilephone" name="mobilephone" required>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="homephone">Home Phone No (Emergency):</label>
+    </div>
+    <div class="col-75">
+      <input type="tel" id="homephone" name="homephone" required>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <input type="submit" value="Submit" onclick="validateForm()">
+  </div>
+  </form>
+</div>
+</body>
+</html>
