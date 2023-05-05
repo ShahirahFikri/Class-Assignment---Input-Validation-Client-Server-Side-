@@ -1,7 +1,7 @@
 # Class Assignment
 
-<p> Name: Nurul Shahirah Binti Ahmad Fikri</p>
-<p>Matric No: 2013890</p>
+## H2 Name: Nurul Shahirah Binti Ahmad Fikri
+## H2 Matric No: 2013890
 
 <strong> //studentdetails.html </strong> <br /> 
 This is an HTML file that contains the markup and styling for a form that is used to collect details of a student. The form has fields for the student's name, matric number, current and home address, email, mobile phone number, and home phone number. The styling of the form is done using CSS, which defines the layout, colors, and fonts used in the form.
