@@ -1,4 +1,4 @@
-# Class Assignment
+# Class Assignments
 
 * **Name: Nurul Shahirah Binti Ahmad Fikri** 
 * **Matric ID: 2013890**
