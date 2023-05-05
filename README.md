@@ -1,6 +1,6 @@
 # Class Assignment
 
-<p> Name: Nurul Shahirah Binti Ahmad Fikri</p><br></br>
+<p> Name: Nurul Shahirah Binti Ahmad Fikri</p>
 <p>Matric No: 2013890</p>
 
 <strong> //studentdetails.html </strong> <br /> 
