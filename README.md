@@ -25,6 +25,9 @@ The HTML document appears to be a form for gathering student information. It has
 ## Class Assignment 2 - Authentication
 
 ## *registration.php* <br /> 
+registration.php is an HTML document that contains a user registration form. The form has several input fields, including full name, email, password, and repeat password. Type, name, id, placeholder, required, and pattern are some of the attributes of the input fields. The document also contains some CSS styling rules that define the appearance of the form elements. The font family, background colour, padding, margin, border, and other properties of the form elements are specified by CSS rules.
+
+The form includes a "Register" button that leads to the action_page.php file, which processes the user's registration information. For users who already have an account, there is a "Sign in" link. A regular expression is used to define the pattern attribute in two input fields: full name and email. The pattern attribute limits the input values of the input fields to the regular expression pattern specified. In this case, the full name can only contain alphabetical characters and spaces, while the email must be a valid email address.
 
 ## *login.php* <br /> 
 
