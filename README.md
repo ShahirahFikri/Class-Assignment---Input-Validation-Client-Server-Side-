@@ -24,4 +24,6 @@ The HTML document appears to be a form for gathering student information. It has
 
 ## Class Assignment 2 - Authentication
 
+## *registration.php* <br /> 
+
 ## Class Assignment 3 - Authorization
