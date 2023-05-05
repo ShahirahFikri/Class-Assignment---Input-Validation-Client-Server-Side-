@@ -1,63 +1,60 @@
-<?php
-session_start();
-if (isset($_SESSION["user"])){
-    header("Location: index.php");
-}
-if (isset($_POST["register"])){
-    header("Location: registration.php");
-    die();
-}
-if (isset($_POST["login"])){
-    require_once "process_form.php";
-}
-?>
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Form</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+form {border: 3px solid #f1f1f1;}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #f2bd4b;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.container {
+  padding: 16px;
+}
+
+}
+</style>
 </head>
 <body>
-    <div class="container">
-         <?php
-        if (isset($_POST["login"])){
-            $email = $_POST["email"];
-            $password = $_POST["password"];
-            require_once "database.php";
-            $sql = "SELECT * FROM users WHERE email = '$email'";
-            $result = mysqli_query($conn, $sql);
-            $user = mysqli_fetch_array($result, MYSQLI_ASSOC);
-            if ($user) {
-                if (password_verify($password, $user["password"])) {
-                    session_start();
-                    $_SESSION["user"] = "yes";
-                    header("Location: index.php");
-                    die();
-                }else{
-                    echo "<div class ='alert alert-danger'>Password does not match</div>";
-                }
-            }else{
-                echo "<div class ='alert alert-danger'>Email does not match</div>";
-            }
 
-        }
-         ?>
-        <form action="login.php" method="post"></form>
-          <div class="form-group">
-            <input type="email" placeholder="Enter Email:" name="email" class="form-control">
-          </div>
-          <div class="form-group">
-            <input type="password" placeholder="Enter Password:" name="password" class="form-control">
-          </div>
-          <div class="form-btn">
-              <input type="submit" value="Login" name="login" class="btn btn-primary">
-          </div>
-        </form>
-        <div><p>Not registered yet <a href="registration.php">Register Here</a></p></div>
-    </div>
+<h2>Login Form</h2>
+
+<form action="/action_page.php" method="post">
+
+  <div class="container">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required pattern="[a-zA-Z0-9]{4,16}" title="Username must be 4-16 characters long and only contain letters and numbers">
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$" title="Password must be at least 8 characters long and contain at least one uppercase letter, one lowercase letter, and one number">
+
+    <button type="submit">Login</button>
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+  </div>
+</form>
+
 </body>
 </html>
