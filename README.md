@@ -3,6 +3,8 @@
 * **Name: Nurul Shahirah Binti Ahmad Fikri** 
 * **Matric ID: 2013890**
 
+## Assignment 1 - Input Validation
+
 <strong> //studentdetails.html </strong> <br /> 
 This is an HTML file that contains the markup and styling for a form that is used to collect details of a student. The form has fields for the student's name, matric number, current and home address, email, mobile phone number, and home phone number. The styling of the form is done using CSS, which defines the layout, colors, and fonts used in the form.
 
