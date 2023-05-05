@@ -40,7 +40,7 @@ button:hover {
 
 <h2>Login Form</h2>
 
-<form action="/action_page.php" method="post">
+<form action="action_page.php" method="post">
 
   <div class="container">
     <label for="uname"><b>Username</b></label>
