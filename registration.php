@@ -70,10 +70,10 @@ hr {
     <hr>
 
     <label for="fullname"><b>Full Name</b></label>
-    <input type="text" placeholder="Enter Full Name" name="full-name" id="full-name" required>
+    <input type="text" placeholder="Enter Full Name" name="full-name" id="full-name" required pattern="^[a-zA-Z\s]+$">
 
 	<label for="email"><b>Email</b></label>
-    <input type="text" placeholder="Enter Email" name="email" id="email" required>
+    <input type="text" placeholder="Enter Email" name="email" id="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
 
     <label for="psw"><b>Password</b></label>
     <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
