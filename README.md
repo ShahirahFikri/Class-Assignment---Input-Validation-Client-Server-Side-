@@ -34,4 +34,6 @@ The form includes a "Register" button that leads to the action_page.php file, wh
 ## *login.php* <br /> 
 This represents a HTML login form with username and password fields as well as a submit button. For validation, the form includes the necessary input fields and pattern attributes. The username field only accepts alphanumeric characters with lengths ranging from 4 to 16 characters, whereas the password field requires a minimum of 8 characters, including at least one uppercase letter, one lowercase letter, and one number. The form is styled with CSS, including a container class and an opacity-changing button on hover. The form action is "action_page.php" and the method is "post," implying that the form data is being submitted to a server for processing.
 
+## *linkpage.php* <br /> 
+
 ## Class Assignment 3 - Authorization
