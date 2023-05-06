@@ -37,3 +37,5 @@ This represents a HTML login form with username and password fields as well as a
 ## *linkpage.php* <br /> 
 
 ## 3) CLASS ASSIGNMENT 3 - AUTHORIZATION
+
+## *authorize.php* <br /> 
