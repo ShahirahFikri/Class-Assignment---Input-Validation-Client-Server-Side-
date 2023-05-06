@@ -5,7 +5,7 @@
 
 ## 1) CLASS ASSIGNMENT 1 - INPUT VALIDATION
 
-## *studentdetails.html* <br /> 
+## ~*studentdetails.html* <br /> 
 This is an HTML file that contains the markup and styling for a form that is used to collect details of a student. The form has fields for the student's name, matric number, current and home address, email, mobile phone number, and home phone number. The styling of the form is done using CSS, which defines the layout, colors, and fonts used in the form.
 
 A container div with the class "container" encloses the form. The form itself is defined using the form element and has the action attribute set to "process_form.php", which indicates that the data collected by the form will be sent to a server-side script for processing.
