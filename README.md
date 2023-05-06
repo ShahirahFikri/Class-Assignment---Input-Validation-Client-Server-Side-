@@ -3,7 +3,7 @@
 * **Name: Nurul Shahirah Binti Ahmad Fikri** 
 * **Matric ID: 2013890**
 
-## CLASS ASSIGNMENT 1 - INPUT VALIDATION
+## 1) CLASS ASSIGNMENT 1 - INPUT VALIDATION
 
 ## *studentdetails.html* <br /> 
 This is an HTML file that contains the markup and styling for a form that is used to collect details of a student. The form has fields for the student's name, matric number, current and home address, email, mobile phone number, and home phone number. The styling of the form is done using CSS, which defines the layout, colors, and fonts used in the form.
@@ -22,7 +22,7 @@ If any of the form fields fail validation, the script stores an error message in
 ## *Link from one page to another* <br /> 
 The HTML document appears to be a form for gathering student information. It has a number of input fields, including those for names, matric numbers, addresses, emails, and phone numbers. The form also has a submit button, which when pressed sends the form's data to a PHP file called "process form.php." The $_POST superglobal array is used by the PHP script to receive the form data, which is then validated using regular expressions. The script echoes the form data if the validation is successful. The script doesn't run the echo statements if the validation fails. 
 
-## CLASS ASSIGNMENT 2 - AUTHENTICATION
+## 2) CLASS ASSIGNMENT 2 - AUTHENTICATION
 
 ## *registration.php* <br /> 
 registration.php is an HTML document that contains a user registration form. The form has several input fields, including full name, email, password, and repeat password. Type, name, id, placeholder, required, and pattern are some of the attributes of the input fields. The document also contains some CSS styling rules that define the appearance of the form elements. The font family, background colour, padding, margin, border, and other properties of the form elements are specified by CSS rules.
@@ -36,4 +36,4 @@ This represents a HTML login form with username and password fields as well as a
 
 ## *linkpage.php* <br /> 
 
-## CLASS ASSIGNMENT 3 - AUTHORIZATION
+## 3) CLASS ASSIGNMENT 3 - AUTHORIZATION
