@@ -36,6 +36,7 @@ This PHP code connects to a MySQL database and manages the process of inserting 
 This represents a HTML login form with username and password fields as well as a submit button. For validation, the form includes the necessary input fields and pattern attributes. The username field only accepts alphanumeric characters with lengths ranging from 4 to 16 characters, whereas the password field requires a minimum of 8 characters, including at least one uppercase letter, one lowercase letter, and one number. The form is styled with CSS, including a container class and an opacity-changing button on hover. The form action is "action_page.php" and the method is "post," implying that the form data is being submitted to a server for processing.
 
 ## - *linkpage.php* <br /> 
+In PHP, the provided code determines a function with the name verifyCredentials. This function is in charge of confirming user credentials by determining whether the supplied username and password correspond to the entries kept in a MySQL database. In order to prevent SQL injection, the function sanitises the input before connecting to the database and running a query to get the hashed password for the specified username. The password_verify function is then used to compare the hashed password to the supplied password, returning true if the credentials are legitimate and otherwise returning false. Before exiting, the function assures adequate error handling and shuts the database connection.
 
 ## 3) CLASS ASSIGNMENT 3 - AUTHORIZATION
 
