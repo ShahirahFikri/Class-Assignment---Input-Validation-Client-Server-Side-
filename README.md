@@ -44,4 +44,5 @@ VerifyCredentials is a PHP function that is defined by the provided code. By det
 User authorization and form processing are controlled by the code. If the user is not currently logged in, it verifies this and directs them to the login page. When a form is submitted, the data is processed and validated, and if the data is valid, a success page is redirected. A message is shown in case the form is not submitted. For logged-in users, this code handles form submission and assures adequate authorization.
 
 ## 4) CLASS ASSIGNMENT 4 - XSS & CSRF
-
+## - *process_form.php* <br />
+This improved version addresses potential XSS vulnerabilities by properly encoding form fields with htmlspecialchars before demonstrating them on the page. A CSRF token is further created and included in the form as a hidden field. Following that, the token is checked on the server to make sure it corresponds to the one kept in the user's session.
